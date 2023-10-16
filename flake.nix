@@ -17,9 +17,9 @@
       # To generate host configurations for all hosts.
       hostnames = builtins.attrNames (builtins.readDir ./hosts);
       # Some hosts are ARM64 (not yet -CP).
-      # systemForHost = hostname:
-      #   if builtins.elem hostname ["host1" "host2"] then "aarch64-linux"
-      #   else "x86_64-linux";
+      systemForHost = hostname:
+        if builtins.elem hostname ["host1" "host2"] then "aarch64-linux"
+        else "x86_64-linux";
     in {
       nixosConfigurations = builtins.listToAttrs (builtins.map (host: {
         name = host;
