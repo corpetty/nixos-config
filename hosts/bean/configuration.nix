@@ -34,10 +34,11 @@
 
   networking = {
     hostName = "bean";
-    useDHCP = true;
+    domain = "enderverse";
+    # useDHCP = true;
+    networkmanager.enable = true;
   };
 
-  networking.networkManager.enable = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
