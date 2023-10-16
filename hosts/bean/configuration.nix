@@ -6,6 +6,7 @@
     ../../roles/base.nix
     ../../roles/users.nix
     ../../roles/network.nix
+    ../../roles/landing.nix
     ../../roles/locate.nix
     ../../roles/desktop.nix
     ../../roles/bluetooth.nix
@@ -33,6 +34,7 @@
 
   networking = {
     hostName = "bean";
+    useDHCP = true;
   };
 
   # Select internationalisation properties.
