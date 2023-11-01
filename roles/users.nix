@@ -1,4 +1,4 @@
-{ pkgs, secret, ... }:
+{ pkgs, ... }:
 
 {
   # Give extra permissions with Nix
@@ -16,7 +16,6 @@
     isNormalUser = true;
     useDefaultShell = true;
     group = "petty";
-    hashedPassword = secret "hosts/users/petty/pass-hash";
     extraGroups = [
       "wheel" "audio" "dialout" "video" "disk"
       "adm" "tty" "systemd-journal" "docker"
@@ -30,12 +29,12 @@
   security.sudo.wheelNeedsPassword = false;
 
   system.userActivationScripts = {
-    #jakubgsDotfiles = let
-    #  dotfilesSh = pkgs.substituteAll {
-    #    src = ../files/dotfiles.sh;
-    #    isExecutable = true;
-    #    inherit (pkgs) bash git coreutils findutils gnused;
-    #  };
-    #in "${dotfilesSh}";
+   pettyDotfiles = let
+     dotfilesSh = pkgs.substituteAll {
+       src = ../files/dotfiles.sh;
+       isExecutable = true;
+       inherit (pkgs) bash git coreutils findutils gnused;
+     };
+   in "${dotfilesSh}";
   };
 }

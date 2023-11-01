@@ -34,7 +34,7 @@
   ];
 
   # User packages
-  users.users.jakubgs.packages = with pkgs; [
+  users.users.petty.packages = with pkgs; [
     # Desktop
     xfce.thunar nitrogen scrot screenfetch flameshot
     # Themes

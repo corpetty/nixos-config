@@ -7,7 +7,7 @@ in {
   # Enable the X11 windowing system.
   services.xserver = {
     enable = true;
-    layout = "pl";
+    layout = "us";
     enableCtrlAltBackspace = true;
     windowManager.awesome.enable = true;
     displayManager = {
@@ -15,13 +15,9 @@ in {
       lightdm = {
         enable = true;
         background = "${../files/wallpapers/default.jpg}";
+        autoLogin.enable = true;
+        autoLogin.user = "petty";
       };
-      # for better mouse in FPS
-      # TODO: generalize for all pointers with this setting
-      sessionCommands = ''
-        ${disableAccelProfile "Razer Razer DeathAdder Elite"}
-        ${disableAccelProfile "Razer Razer DeathAdder Elite Consumer Control"}
-      '';
     };
     # symlink at /etc/X11/xorg.conf
     exportConfiguration = true;

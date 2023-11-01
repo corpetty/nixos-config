@@ -16,7 +16,7 @@
       overlayModule = ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay ]; });
       # To generate host configurations for all hosts.
       hostnames = builtins.attrNames (builtins.readDir ./hosts);
-      # Some hosts are ARM64 (not yet -CP).
+      # Some hosts are ARM64
       systemForHost = hostname:
         if builtins.elem hostname ["host1" "host2"] then "aarch64-linux"
         else "x86_64-linux";

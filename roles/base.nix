@@ -5,7 +5,6 @@
     ./nix.nix
     ./fixes.nix
     ./helpers.nix
-    ./secrets.nix
     ./metrics.nix
     ./security.nix
   ];
@@ -60,7 +59,7 @@
   boot.kernel.sysctl = { "kernel.sysrq" = 1; };
 
   # domain use for my own infra (from Jakub -CP)
-  # networking.search = [ "magi.blue" "magi.lan" ];
+  # networking.search = [ "PettyHouse" ];
 
   # NTP Server
   services.chrony.enable = true;

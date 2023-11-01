@@ -47,15 +47,15 @@ in {
     };
   };
 
-  services.landing = {
-    proxyServices = [{
-      name = "/netdata/";
-      title = "Netdata";
-      value = {
-        proxyPass = "http://localhost:${
-            toString services.netdata.config.web."default port"
-          }/";
-      };
-    }];
-  };
+  # services.landing = {
+   #  proxyServices = [{
+   #    name = "/netdata/";
+  #     title = "Netdata";
+  #     value = {
+   #      proxyPass = "http://localhost:${
+   #          toString services.netdata.config.web."default port"
+   #        }/";
+   #    };
+    # }];
+  # ;
 }

@@ -1,4 +1,4 @@
-{ pkgs, config, lib, secret, ... }:
+{ pkgs, config, secret, lib, ... }:
 
 let
   inherit (config) services;
