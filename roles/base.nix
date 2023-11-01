@@ -22,7 +22,7 @@
     htop iotop iftop multitail
     # dev tools
     neovim jq tmux fzf silver-searcher
-    git qrencode sqlite
+    git qrencode sqlite gh
     # hardware tools
     pciutils lm_sensors acpi pmutils usbutils dmidecode
     # networking
