@@ -15,9 +15,9 @@ in {
       lightdm = {
         enable = true;
         background = "${../files/wallpapers/default.jpg}";
-        autoLogin.enable = true;
-        autoLogin.user = "petty";
       };
+      autoLogin.enable = true;
+      autoLogin.user = "petty";
     };
     # symlink at /etc/X11/xorg.conf
     exportConfiguration = true;

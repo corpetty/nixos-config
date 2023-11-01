@@ -42,7 +42,7 @@
     # Browsers
     brave ungoogled-chromium
     # Documents
-    evince
+    evince obsidian
     # Images
     feh gthumb gimp exiftool
     # Video

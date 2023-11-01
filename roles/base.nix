@@ -58,6 +58,15 @@
   # SysRQ is useful when things hang
   boot.kernel.sysctl = { "kernel.sysrq" = 1; };
 
+  boot.binfmt.registrations.appimage = {
+    wrapInterpreterInShell = false;
+    interpreter = "${pkgs.appimage-run}/bin/appimage-run";
+    recognitionType = "magic";
+    offset = 0;
+    mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
+    magicOrExtension = ''\x7fELF....AI\x02'';
+  };
+
   # domain use for my own infra (from Jakub -CP)
   # networking.search = [ "PettyHouse" ];
 

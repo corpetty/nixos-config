@@ -21,8 +21,6 @@
       "adm" "tty" "systemd-journal" "docker"
       "networkmanager" "cdrom"
     ];
-    openssh.authorizedKeys.keys = [
-    ];
   };
 
   # allow of sudo without password
