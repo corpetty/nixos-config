@@ -12,7 +12,7 @@
   # Packages
   environment.systemPackages = with pkgs; [
     # utilities
-    file zsh bash man-pages sudo pass bc pv rename uptimed lsb-release
+    file zsh bash man-pages sudo pass bc pv rename uptimed lsb-release v4l-utils cpuid
     # building
     gnumake gcc autoconf automake patchelf
     unrar unzip zip envsubst entr
