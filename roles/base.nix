@@ -28,13 +28,15 @@
     # networking
     wget curl nmap nettools traceroute dnsutils wol iperf
     # filesystems
-    ncdu zfs zfstools ranger lsof ntfs3g
+    ncdu zfs zfstools ranger lsof ntfs3g exfat
     # hard drive management
     lsscsi hddtemp hdparm perf-tools parted gptfdisk
     # network filesystems
     nfs-utils
     # security
     openssl
+    # languages
+    python3
   ];
 
   # Shell

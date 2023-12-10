@@ -24,7 +24,7 @@
     # System
     gparted
     # Audio
-    pavucontrol pasystray noisetorch
+    pavucontrol pasystray
     # Screen
     arandr
     # Security
@@ -40,15 +40,15 @@
     # Themes
     lxappearance matcha-gtk-theme vimix-gtk-themes
     # Browsers
-    brave ungoogled-chromium
+    brave ungoogled-chromium firefox
     # Documents
     evince obsidian
     # Images
     feh gthumb gimp exiftool
     # Video
-    mpv yt-dlp ffmpeg
+    mpv yt-dlp ffmpeg plex-media-player
     # Audio
-    mpc_cli ncmpcpp vorbis-tools mpg321 soundconverter
+    mpc_cli ncmpcpp vorbis-tools mpg321 soundconverter noisetorch
     # Communication
     gnome3.geary discord
     # Torrent
@@ -71,4 +71,8 @@
 
   # Fix Gnome Apps that require dconf
   programs.dconf.enable = true;
+
+  # Enable noisetorch
+  programs.noisetorch.enable = true;
+
 }
