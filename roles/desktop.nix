@@ -50,7 +50,7 @@
     # Audio
     mpc_cli ncmpcpp vorbis-tools mpg321 soundconverter noisetorch
     # Communication
-    gnome3.geary discord
+    gnome3.geary discord signal-cli betterdiscord-installer
     # Torrent
     transmission-remote-gtk
     # Coding
