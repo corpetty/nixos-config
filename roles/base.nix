@@ -34,7 +34,7 @@
     # network filesystems
     nfs-utils
     # security
-    openssl
+    openssl veracrypt
     # languages
     python3
   ];

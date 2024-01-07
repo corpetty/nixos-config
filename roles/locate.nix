@@ -8,3 +8,4 @@
   services.locate.prunePaths = [ "/mnt/torrent" ];
   services.locate.localuser = null; # Fix user warning
 }
+

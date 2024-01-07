@@ -4,6 +4,7 @@
   imports = [
     ./xserver.nix
     ./clipmenu.nix
+    ./ml.nix
     # ./redshift.nix
     # ../services/protonmail-bridge.nix
   ];
@@ -48,13 +49,15 @@
     # Video
     mpv yt-dlp ffmpeg plex-media-player
     # Audio
-    mpc_cli ncmpcpp vorbis-tools mpg321 soundconverter noisetorch
+    ncmpcpp vorbis-tools mpg321 soundconverter noisetorch playerctl
     # Communication
     gnome3.geary discord signal-cli betterdiscord-installer
     # Torrent
     transmission-remote-gtk
     # Coding
     zeal
+    # Crypto
+    exodus
   ];
 
   # Automatically detect screen layout changes.
