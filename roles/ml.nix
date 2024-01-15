@@ -24,7 +24,7 @@
     binutils
     gitRepo autoconf curl
     procps gnumake util-linux m4 gperf unzip
-    libGLU ligGL
+    libGLU libGL
     glib
   ];
 

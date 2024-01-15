@@ -7,6 +7,7 @@
     ./helpers.nix
     ./metrics.nix
     ./security.nix
+    ./ledger.nix
   ];
 
   # Packages
@@ -22,7 +23,7 @@
     htop iotop iftop multitail
     # dev tools
     neovim jq tmux fzf silver-searcher
-    git qrencode sqlite gh
+    git git-lfs qrencode sqlite gh
     # hardware tools
     pciutils lm_sensors acpi pmutils usbutils dmidecode
     # networking

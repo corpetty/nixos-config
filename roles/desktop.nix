@@ -4,7 +4,7 @@
   imports = [
     ./xserver.nix
     ./clipmenu.nix
-    ./ml.nix
+    # ./ml.nix
     # ./redshift.nix
     # ../services/protonmail-bridge.nix
   ];
@@ -25,7 +25,7 @@
     # System
     gparted
     # Audio
-    pavucontrol pasystray
+    pavucontrol pasystray pulseaudio
     # Screen
     arandr
     # Security
