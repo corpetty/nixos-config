@@ -78,4 +78,13 @@
   # Enable noisetorch
   programs.noisetorch.enable = true;
 
+  # Enable Thunar and plugins
+  programs.thunar.enable = true;
+  programs.xfconf.enable = true; # allows for settings
+  programs.thunar.plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman
+  ];
+  services.gvfs.enable = true; # Mount, trash, and other functionality
+  services.tumbler.enable = true; # Thumbnail support for images
 }

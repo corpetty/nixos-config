@@ -10,4 +10,5 @@
     ledger-udev-rules
   ];
 
+  hardware.ledger.enable = true;
 }

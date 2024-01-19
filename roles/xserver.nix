@@ -9,7 +9,13 @@ in {
     enable = true;
     layout = "us";
     enableCtrlAltBackspace = true;
-    windowManager.awesome.enable = true;
+    windowManager.awesome = {
+      enable = true;
+      luaModules = [
+        luarocks
+        luadbi-mysql
+      ];
+    };
     displayManager = {
       defaultSession = "none+awesome";
       lightdm = {
