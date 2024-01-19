@@ -11,7 +11,7 @@ in {
     enableCtrlAltBackspace = true;
     windowManager.awesome = {
       enable = true;
-      luaModules = [
+      luaModules = with pkgs.luaPackages; [
         luarocks
         luadbi-mysql
       ];
