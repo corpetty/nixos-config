@@ -55,7 +55,7 @@
     # Torrent
     transmission-remote-gtk
     # Coding
-    zeal
+    zeal github-desktop
     # Crypto
     exodus
   ];
