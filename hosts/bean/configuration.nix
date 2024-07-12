@@ -75,6 +75,14 @@
     package = config.boot.kernelPackages.nvidiaPackages.production;
     nvidiaSettings = true;
     modesetting.enable = true;
+    forceFullCompositionPipeline = true;
+
+  #  prime = {
+  #    sync.enable = true;
+
+  #    intelBusId = "PCI:0:2:0";
+  #    nvidiaBusId = "PCI:0:1:1";
+  #  };
   };
 
   # Power Management
@@ -89,4 +97,10 @@
     "electron-24.8.6"
     "electron-25.9.0"
   ];
+
+  # allow video into loopback for OBS
+  boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
+
+  # enable virtualization
+  virtualisation.libvirtd.enable = true;
 }

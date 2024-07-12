@@ -39,13 +39,14 @@ in {
         monospace = [ "Inconsolata" ];
       };
     };
-    fonts = with pkgs; [
+    packages = with pkgs; [
       inconsolata
       terminus_font
       corefonts
       fira-code
       dejavu_fonts
       ubuntu_font_family
+      (nerdfonts.override {fonts = ["DroidSansMono"]; })
     ];
   };
 }

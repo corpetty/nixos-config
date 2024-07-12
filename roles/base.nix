@@ -27,7 +27,7 @@
     # hardware tools
     pciutils lm_sensors acpi pmutils usbutils dmidecode
     # networking
-    wget curl nmap nettools traceroute dnsutils wol iperf
+    wget curl nmap nettools traceroute dnsutils wol iperf zerotierone wirelesstools
     # filesystems
     ncdu zfs zfstools ranger lsof ntfs3g exfat
     # hard drive management

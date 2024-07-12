@@ -29,9 +29,11 @@
     # Screen
     arandr
     # Security
-    pinentry-gnome gnome3.seahorse cryptsetup
+    pinentry-gnome gnome3.seahorse cryptsetup protonvpn-gui
     # Phone
     go-mtpfs chirp
+    # ML
+    ollama
   ];
 
   # User packages
@@ -47,7 +49,7 @@
     # Images
     feh gthumb gimp exiftool
     # Video
-    mpv yt-dlp ffmpeg plex-media-player
+    mpv yt-dlp ffmpeg plex-media-player unstable.obs-studio
     # Audio
     ncmpcpp vorbis-tools mpg321 soundconverter noisetorch playerctl
     # Communication
@@ -55,10 +57,17 @@
     # Torrent
     transmission-remote-gtk
     # Coding
-    zeal github-desktop
+    zeal github-desktop poetry protege-distribution
     # Crypto
     exodus
+    # Tools
+    etcher
   ];
+
+  # For installing etcher
+  nixpkgs.config.permittedInsecurePackages = [
+    "electron-19.1.9"
+  ];  
 
   # Automatically detect screen layout changes.
   services.autorandr.enable = true;
